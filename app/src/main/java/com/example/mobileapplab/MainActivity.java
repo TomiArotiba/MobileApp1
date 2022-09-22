@@ -2,6 +2,7 @@ package com.example.mobileapplab;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     TextView textview;
     Button showBtn;
+    Button changeColour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 textview.setText("My name is Oluwatomiloba");
+            }
+
+        });
+        changeColour = (Button) findViewById(R.id.change_colour);
+        changeColour.setOnClickListener(new View.OnClickListener(){
+            @Override
+           public void onClick(View v) {
+                changeColour.setBackgroundColor(Color.parseColor("#ffffff"));
             }
         });
     }
