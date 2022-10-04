@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MobileAppLab</string>
+    <string name="show_name">Show Name</string>
 </resources>
